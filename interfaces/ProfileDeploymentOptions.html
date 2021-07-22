@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LSPFactoryOptions | lsp-factory.js</title>
+	<title>ProfileDeploymentOptions | lsp-factory.js</title>
 	<meta name="description" content="Documentation for lsp-factory.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,10 @@
 					<a href="../modules.html">lsp-factory.js</a>
 				</li>
 				<li>
-					<a href="../modules/interfaces_lsp_factory_options.html">interfaces/lsp-factory-options</a>
-				</li>
-				<li>
-					<a href="interfaces_lsp_factory_options.LSPFactoryOptions.html">LSPFactoryOptions</a>
+					<a href="ProfileDeploymentOptions.html">ProfileDeploymentOptions</a>
 				</li>
 			</ul>
-			<h1>Interface LSPFactoryOptions</h1>
+			<h1>Interface ProfileDeploymentOptions</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>TDB</p>
+						<p>TBD</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LSPFactoryOptions</span>
+						<span class="target">ProfileDeploymentOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -90,9 +87,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#deployKey" class="tsd-kind-icon">deploy<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ProfileDeploymentOptions.html#controllerAddresses" class="tsd-kind-icon">controller<wbr>Addresses</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ProfileDeploymentOptions.html#lsp3ProfileJson" class="tsd-kind-icon">lsp3<wbr>Profile<wbr>Json</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +97,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chainId" class="tsd-anchor"></a>
-					<h3>chain<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="controllerAddresses" class="tsd-anchor"></a>
+					<h3>controller<wbr>Addresses</h3>
+					<div class="tsd-signature tsd-kind-icon">controller<wbr>Addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/lukso-network/tools-lspFactory/blob/8009a82/src/lib/interfaces/lsp-factory-options.ts#L7">interfaces/lsp-factory-options.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/lukso-network/tools-lspFactory/blob/443cb4c/src/lib/interfaces/profile-deployment-options.ts#L7">lib/interfaces/profile-deployment-options.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="deployKey" class="tsd-anchor"></a>
-					<h3>deploy<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="lsp3ProfileJson" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> lsp3<wbr>Profile<wbr>Json</h3>
+					<div class="tsd-signature tsd-kind-icon">lsp3<wbr>Profile<wbr>Json<span class="tsd-signature-symbol">:</span> <a href="LSP3ProfileJSON.html" class="tsd-signature-type" data-tsd-kind="Interface">LSP3ProfileJSON</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/lukso-network/tools-lspFactory/blob/8009a82/src/lib/interfaces/lsp-factory-options.ts#L5">interfaces/lsp-factory-options.ts:5</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3>provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/lukso-network/tools-lspFactory/blob/8009a82/src/lib/interfaces/lsp-factory-options.ts#L6">interfaces/lsp-factory-options.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/lukso-network/tools-lspFactory/blob/443cb4c/src/lib/interfaces/profile-deployment-options.ts#L8">lib/interfaces/profile-deployment-options.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,49 +122,46 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" ">
-						<a href="../modules.html">Modules</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/classes_lsp3_universal_profile.html">classes/lsp3-<wbr>universal-<wbr>profile</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/helpers_erc725.html">helpers/erc725</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/helpers_sample_lsp3_profile.html">helpers/sample-<wbr>lsp3-<wbr>profile</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/interfaces_contract_options.html">interfaces/contract-<wbr>options</a>
-					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/interfaces_lsp_factory_options.html">interfaces/lsp-<wbr>factory-<wbr>options</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/interfaces_lsp3_profile.html">interfaces/lsp3-<wbr>profile</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/interfaces_profile_deployment_options.html">interfaces/profile-<wbr>deployment-<wbr>options</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/lsp_factory.html">lsp-<wbr>factory</a>
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="../classes/LSP3UniversalProfile.html" class="tsd-kind-icon">LSP3<wbr>Universal<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/LSPFactory.html" class="tsd-kind-icon">LSPFactory</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ContractOptions.html" class="tsd-kind-icon">Contract<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="LSP3Profile.html" class="tsd-kind-icon">LSP3<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="LSP3ProfileImage.html" class="tsd-kind-icon">LSP3<wbr>Profile<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="LSP3ProfileJSON.html" class="tsd-kind-icon">LSP3<wbr>ProfileJSON</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="LSP3ProfileLink.html" class="tsd-kind-icon">LSP3<wbr>Profile<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="LSPFactoryOptions.html" class="tsd-kind-icon">LSPFactory<wbr>Options</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="interfaces_lsp_factory_options.LSPFactoryOptions.html" class="tsd-kind-icon">LSPFactory<wbr>Options</a>
+					<li class="current tsd-kind-interface">
+						<a href="ProfileDeploymentOptions.html" class="tsd-kind-icon">Profile<wbr>Deployment<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a>
+								<a href="ProfileDeploymentOptions.html#controllerAddresses" class="tsd-kind-icon">controller<wbr>Addresses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#deployKey" class="tsd-kind-icon">deploy<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="interfaces_lsp_factory_options.LSPFactoryOptions.html#provider" class="tsd-kind-icon">provider</a>
+								<a href="ProfileDeploymentOptions.html#lsp3ProfileJson" class="tsd-kind-icon">lsp3<wbr>Profile<wbr>Json</a>
 							</li>
 						</ul>
 					</li>
@@ -194,15 +177,15 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 		</div>
 	</div>
