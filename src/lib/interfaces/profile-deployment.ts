@@ -1,6 +1,10 @@
 import { TransactionReceipt } from '@ethersproject/abstract-provider';
 import { ContractTransaction } from 'ethers';
 import { Observable } from 'rxjs';
+import { KeyManager, UniversalReceiverAddressStore } from '../..';
+import { LSP3Account } from '../../../types/ethers-v5';
+
+import { ERC725Account } from '../../../types/ethers-v5/ERC725Account';
 
 import { LSP3ProfileJSON } from './lsp3-profile';
 
@@ -70,6 +74,13 @@ export type DeploymentEvent =
   | DeploymentEventTransaction;
 
 export type DeploymentEvent$ = Observable<DeploymentEvent>;
+
+export interface DeployedContracts {
+  ERC725Account?: ERC725Account;
+  LSP3Account?: LSP3Account;
+  KeyManager: KeyManager;
+  UniversalReceiverDelegate: UniversalReceiverAddressStore;
+}
 
 export interface ContractDeploymentOptions {
   version?: string;

@@ -2,7 +2,7 @@
 
 - Write Docs
 - Publish the abis from the contracts within `universalprofile-smart-contracts`
-  - Use the `KeyManager` from the 'permissions' branch
+- Use the `KeyManager` from the 'permissions' branch
 - Investigate on how to apply EIP-1167 properly
 - Decide on how and where to store the `versions`
 

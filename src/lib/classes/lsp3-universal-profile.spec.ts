@@ -18,10 +18,9 @@ describe('LSP3UniversalProfile', () => {
     proxyDeployer = new ProxyDeployer(signer);
     baseContracts = await proxyDeployer.deployBaseContracts();
   });
-  it.skip('should deploy and set LSP3Profile data', (done) => {
+  it('should deploy and set LSP3Profile data', (done) => {
     const myLSPFactory = new LSPFactory(signer, provider);
-
-    const deployments$ = myLSPFactory.LSP3UniversalProfile.deploy(
+    const deployments$ = myLSPFactory.LSP3UniversalProfile.deployReactive(
       {
         controllerAddresses: ['0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266'],
         lsp3Profile: {
@@ -41,13 +40,15 @@ describe('LSP3UniversalProfile', () => {
 
     deployments$.subscribe({
       next: (deploymentEvents: DeploymentEvent) => {
+        console.log(deploymentEvents);
         events = deploymentEvents;
       },
-      error: (error) => {
-        expect(1).toEqual(error);
+      error: () => {
+        // expect(1).toEqual(error);
         done();
       },
       complete: async () => {
+        console.log('events', events);
         const ownerAddress = await events.LSP3Account.contract.owner();
         // const keyManagerAddress = await events.KeyManager.contract.address;
         expect(ownerAddress).toEqual('0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266');
@@ -68,4 +69,26 @@ describe('LSP3UniversalProfile', () => {
       },
     });
   });
+
+  // it('deploy should deploy and return contract data', async () => {
+  //   const myLSPFactory = new LSPFactory(signer, provider);
+
+  //   const result = myLSPFactory.LSP3UniversalProfile.deploy(
+  //     {
+  //       controllerAddresses: ['0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266'],
+  //       lsp3Profile: {
+  //         json: lsp3ProfileJson,
+  //         url: 'fake',
+  //       },
+  //     },
+  //     {
+  //       libAddresses: {
+  //         lsp3AccountInit: baseContracts.lsp3Account.address,
+  //         universalReceiverAddressStoreInit: baseContracts.universalReceiverAddressStore.address,
+  //       },
+  //     }
+  //   );
+
+  //   console.log(await result);
+  // });
 });

@@ -4,8 +4,8 @@
 let deploymentEvents = [];
 
 lspFactory.LSP3UniversalProfile
-  .deploy(// ... omitted for brevity)
-  .subscribe({
+  .deploy(// ... omitted for brevity))
+   .subscribe({
     next: (deploymentEvent: DeploymentEvent<any>) => {
       deploymenLogs.push(deploymentEvent);
     },
